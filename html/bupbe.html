@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop MTT TOYS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/chitietsanpham.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="top-header">
+        <div class="left">
+            <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+        <div class="right">
+            <a href="#"><i class="fas fa-briefcase"></i> Shopee Mall</a>
+            <a href="#"><i class="fas fa-handshake"></i> Đối Tác</a>
+            <a href="#"><i class="fas fa-headphones-alt"></i> Hotline: 0389.730.361</a>
+            <a href="#"><i class="fas fa-newspaper"></i> Tin Khuyến Mãi</a>
+            <a href="../html/dangnhap.html"><i class="fas fa-user"></i> Đăng Nhập</a>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="header">
+        <div class="header-left">
+            <a href="../html/index.html">
+                <img src="../img/logo.png" alt="MTT TOYS" class="company-logo-header">
+            </a>
+            <input type="text" placeholder="Nhập tên sản phẩm cần tìm....">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="header-right">
+
+            <a href="">
+                <i class="fas fa-box icon" title="Tra cứu đơn hàng"></i>
+                <span>Tra cứu đơn hàng</span>
+            </a>
+            <a href="">
+                <i class="fas fa-shopping-cart icon" title="Giỏ hàng"></i>
+                <span>Giỏ hàng</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Product Detail Section -->
+    <div class="product-detail">
+        <div class="product-content">
+            <!-- Product Images -->
+            <div class="product-image">
+                <img src="../img/bupbe5.webp" alt="" class="main-image">
+                <div class="thumbnail-images">
+                    <img src="../img/bupbe5.webp" alt="Thumbnail 1" onclick="changeImage('../img/bupbe5.webp')">
+                    <img src="../img/bupbe5.1.webp" alt="Thumbnail 2" onclick="changeImage('../img/bupbe5.1.webp')">
+                    <img src="../img/bupbe5.2.webp" alt="Thumbnail 3" onclick="changeImage('../img/bupbe5.2.webp')">
+                    <img src="../img/bupbe5.3.webp" alt="Thumbnail 4" onclick="changeImage('../img/bupbe5.3.webp')">
+                </div>
+            </div>
+
+            <!-- Product Information -->
+            <div class="product-info">
+                <h2>Thông tin sản phẩm</h2>
+                <div class="info-box">
+                    <ul>
+                        <li>Chủ đề: BARBIE FAMILY</li>
+                        <li>XUẤT SỨ: INDONESIA</li>
+                        <li>Mã VT: HJY18</li>
+                        <li>Tuổi: 3 tuổi trở lên</li>
+                        <li>Xuất xứ thương hiệu: Mỹ</li>
+                        <li>Giới tính: Nữ</li>
+                    </ul>
+                    <h3>Giá: 799.000đ</h3>
+                    <h4>Khuyến mãi:</h4>
+                    <ul>
+                        <li>[Chọn 1 KM] Voucher giảm 50% khi mua hóa đơn trên 5 triệu</li>
+                        <li>[Chọn 1 KM] Khuyến mãi thành viên mới tích lũy xu cho đơn hàng trên website lên đến 5%. Đăng nhập Website nhận ngay tích lũy xu và tích điểm ngay.</li>
+                        <li>[Chọn 1 KM] Dịch vụ hỗ trợ ship hỏa tốc 0đ</li>
+                    </ul>
+                </div>
+
+                <div class="add-to-cart">
+                    <button onclick="addToCart()">
+                        <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                    </button>
+                    <div class="quantity-control">
+                        <button onclick="decreaseQuantity()">-</button>
+                        <input type="number" value="1" min="1" id="quantity" style="width: 50px; text-align: center;">
+                        <button onclick="increaseQuantity()">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Description Section -->
+    <div class="product-description">
+        <div class="description-content">
+            <div class="description-text">
+                <h2>Đồ chơi Kỳ Nghỉ Du Lịch Của Búp Bê Barbie HJY18</h2>
+                <p>Hãy cùng Barbie Malibu đi khắp thế giới cùng những phụ kiện du lịch thời trang. Búp bê Barbie® đã sẵn sàng cho cuộc phiêu lưu mới tiếp theo cùng với chú cún cưng của mình và hơn 10 phụ kiện du lịch. Trang trí vali của cô ấy bằng tấm sticker,
+                    sau đó đóng gói ba lô và hành lý của cô ấy - cả dạng mở và dạng đóng để phù hợp với những vật dụng cần thiết khi đi du lịch của cô ấy! Búp bê Barbie® đã sẵn sàng cất cánh bay trong bộ trang phục du lịch dễ thương (có váy in hình bầu
+                    trời) và có các món phụ kiện theo chủ đề du lịch như gối kê cổ hình mèo con, bàn chải đánh răng, tai nghe, máy ảnh, v.v.!</p>
+                <img src="../img/bupbe5.3.webp" alt="Mô tả sản phẩm" class="description-image">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Contact Information -->
+            <div class="footer-section">
+                <h3>THÔNG TIN LIÊN HỆ</h3>
+                <p>Cửa hàng: 8:30 - 20:00 Thứ 2 đến Thứ 7</p>
+                <p>Bảo hành: 8:30 - 17:30 Thứ 2 đến Thứ 7</p>
+                <p>Địa chỉ: 144/23A Dương Quảng Hàm, Phường 5, Quận Gò Vấp, TP. Hồ Chí Minh </p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon youtube"><img src="../img/ytb.webp" alt="YouTube"></a>
+                    <a href="#" class="social-icon tiktok"><img src="../img/tiktok.webp" alt="TikTok"></a>
+                    <a href="#" class="social-icon facebook"><img src="../img/facebook.webp" alt="Facebook"></a>
+                    <a href="#" class="social-icon zalo"><img src="../img/zalo.webp" alt="Zalo"></a>
+                    <a href="#" class="social-icon maps"><img src="../img/map.png" alt="Google Maps"></a>
+                </div>
+                <div class="certification">
+                    <img src="../img/dathongbao.webp" alt="Đã thông báo">
+                    <img src="../img/dmca.png" alt="DMCA Protected">
+                </div>
+            </div>
+
+            <!-- About Us -->
+            <div class="footer-section">
+                <h3>VỀ CHÚNG TÔI</h3>
+                <ul>
+                    <li><a href="#">Liên hệ với chúng tôi</a></li>
+                    <li><a href="#">Giới thiệu công ty</a></li>
+                    <li><a href="#">Bản đồ</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Care -->
+            <div class="footer-section">
+                <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+                <ul>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Hướng dẫn mua hàng</a></li>
+                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript files -->
+    <script src="../js/slider.js"></script>
+    <script src="../js/product.js"></script>
+</body>
+
+</html>
